@@ -1,0 +1,24 @@
+.exercise-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 70pvw;
+}
+
+.exercise-panel__show-area {
+    padding: 30px 130px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: -8px 12px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.exercise-panel__info {
+    display: flex;
+    gap: 50px;
+}
+
+.exercise-panel__info-container {
+    display: flex;
+    gap: 5px;
+}

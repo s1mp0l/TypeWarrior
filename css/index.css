@@ -1,0 +1,180 @@
+/* TITLE SCREEN */
+
+.page {
+    background: #FCF6F1;
+}
+
+.title-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 1300px;
+    background: #F3D468;
+}   
+
+.title-screen__body {
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.title-screen__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* MACBOOK */
+
+.mcb__body {
+    width: 1017px;
+    height: 621.03px;
+    position: relative;
+}
+
+.mcb__base {
+    position: absolute;
+
+    left: 0px;
+    top: 0px;
+}
+
+.mcb__fill {
+    width: 832.55px;
+    height: 538.17px;
+
+    position: absolute;
+
+    left: 92.22px;
+    top: 14.38px;
+    
+
+    background: #EEEEEE;
+    border-radius: 14.1963px 14.1963px 0px 0px;
+}
+
+.mcb__fill img 
+{
+    padding-top: 100px;
+
+    object-fit: cover;
+    background: #EEEEEE;
+    border-radius: 14.1963px 14.1963px 0px 0px;
+}
+
+.mcb__notch {
+    position: absolute;
+
+    left: 450.97px;
+    top: 5.08px;
+}
+
+/*  */
+
+/* ABILITIES */
+
+.abilities__card img {
+    scale: 0.8;
+    filter: brightness(80%);
+    transition: all 0.5s;
+}
+
+.abilities__card img:hover {
+    scale: 1;
+    filter: brightness(100%);
+}
+
+.abilities__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 70px;
+}
+
+.abilities__card {
+    display: flex;
+    gap: 24px;
+}
+
+.abilities__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.abilities__title {
+    margin-top: 0;
+}
+/*  */
+
+/* INFO */
+
+.info__wrapper {
+    text-align: center;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.info__img {
+    margin-top: 50px;;
+    width: 70%;
+}
+
+/*  */
+
+/* SLIDER */
+
+.slider {
+    width: 100%;
+    height: 826px;
+    background: url(../img/index/slider-bg.png) no-repeat;
+    background-size: cover;
+}
+
+.slider__item {
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*  */
+
+/*  */
+
+@media (max-width: 1279.98px) {
+    .abilities__card {
+        flex-direction: column;
+    }
+
+    .abilities__container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .slider__item .img-fluid {
+        display: none;
+    }
+
+    .mcb__body {
+        display: none;
+    }
+}
+
+/*  */

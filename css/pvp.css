@@ -1,0 +1,57 @@
+.pvp__start-btn {
+    background: #3E0808;
+    width: 185px;
+    height: 48px;
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.road {
+
+}
+
+.road__player-container {
+    display: flex;
+    gap: 30px;
+}
+
+.road__player {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.player__circle {
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 30px;
+}
+
+#nikkmk .player__circle, #glinames .player__circle {
+    background: aqua;
+}
+
+#s1mp0l, #makrador .player__circle {
+    background: magenta;
+}
+
+#rodgri .player__circle {
+    background: greenyellow;
+}
+
+@media (max-width: 1279.98px) {
+    .road__player-container {
+        flex-direction: column;
+    }
+}

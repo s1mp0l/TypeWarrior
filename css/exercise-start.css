@@ -1,0 +1,21 @@
+.lesson {
+    background: #EEEEEE;
+    border-radius: 38px;
+}
+
+.lesson__body {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.lesson__btn {
+    margin-top: 100px;;
+}
+
+.lesson__exercise-number {
+    padding-top: 20px;
+}
+
