@@ -1,0 +1,98 @@
+/* The container must be positioned relative: */
+.custom-select {
+    width:135px;
+    z-index: 100;
+    position: relative;
+  }
+  
+  .custom-select select {
+    position: relative;
+    z-index: 100;
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    width:135px;
+    text-align: center;
+    border-radius: 16px;
+    border: 2px solid #3E0808;
+    position: relative;
+    z-index: 100;
+    background-color:transparent;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 16px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #3E0808 transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #3E0808 transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    float: right;
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+    color: #3E0808;
+    width: 100%;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+
+  .select-items div {
+    position: relative;
+    z-index: 100;
+    padding: 0;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  }
+
+  .select-items div a {
+    position: relative;
+    z-index: 100;
+    display: block;
+    color: #3E0808;;
+    padding: 8px 16px;
+    width: 100%;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: transparent;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 767.98px) {
+    .custom-select {
+      width:80px;
+    }
+
+    .select-selected:after {
+      left: 20px;
+    }
+  }
