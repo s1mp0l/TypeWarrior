@@ -26,8 +26,6 @@ function createButtons(amount) {
     return buttons;
 }
 
-
-
 let buttons = createButtons(50);
 
 let anim = gsap.to(".bg-btn", {

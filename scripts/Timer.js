@@ -17,8 +17,6 @@ export function TaskTimer(name, durationInSeconds, onEnd, onTick) {
     });
 
     this.start = function() {
-        // if (running) return;
-
         running = true;
         endTime = new Date().getTime() + durationInSeconds * 1000;
         go();

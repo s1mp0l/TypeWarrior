@@ -407,6 +407,10 @@ footer {
 
 /* ADAPTIVE */
 @media (max-width: 1279.98px) {
+    .table {
+        display: none;
+    }
+
     .menu__login-btn {
         display: none;
     }
